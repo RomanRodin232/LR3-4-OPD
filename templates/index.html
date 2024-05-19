@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Решение уравнения
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="post">
+    <div style="font-size: 28px" align="center">
+    <b><p>Введите коэффициенты квадратного уравнения: ax^2 + bx + c</p></b>
+    <p><input name="a" placeholder="a" type = "number"  required> </p>
+    <p><input name="b" placeholder="b" type = "number"  required> </p>
+    <p><input name="c" placeholder="c" type = "number"  required> </p>
+    <p><button type="submit"><font size="5">Рассчитать корни данного уравнения</font></button> </p>
+    <p>{{answer}}</p>
+    </div>
+    </form>
+
+{% endblock %}
